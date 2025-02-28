@@ -161,7 +161,7 @@ See docs on macro `dispatch`: ["Managing different global overrides across packa
 
 ## A built-in alternative pattern for generating schema names
 
-A common customization is to ignore the target schema in production environments, and ignore the custom schema configurations in other environments (such as development and CI).
+A common customization is to use the target schema by default in production when no custom schema is set, while ignoring custom schema configurations in non-production environments (such as development and CI).
 
 Production Environment (`target.name == 'prod'`)
 
